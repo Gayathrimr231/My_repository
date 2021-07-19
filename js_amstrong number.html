@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amstrong</title>
+    <script>
+        function Amstrong()
+       {
+           var a,number,rem,add=0;
+           number=Number(document.getElementById("N").value);
+           a=number;
+           while(number>0)
+           {
+               rem=number%10;
+               add=add+rem*rem*rem;
+               number=parseInt(number/10);
+           }
+           if(add==a)
+           {
+               window.alert("The number is amstrong");
+           }
+           else{
+            window.alert("The number is not a amstrong");
+           }
+       } 
+    </script>
+    </head>
+    <body>
+        <br>
+        <h2> Whether a number is amstrong or not</h2>
+        Enter the number:<input type="text" name="n" id="N">
+        <br>
+        <button onclick="Amstrong()">Check</button>
+
+    </body>
+</html>
