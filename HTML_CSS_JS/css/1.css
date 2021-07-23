@@ -1,0 +1,35 @@
+form{
+    background-color: #ffe4c4;
+    border: saddlebrown 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 20px;
+}
+
+header,footer{
+    border:solid 1px ;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: silver;
+}
+
+#logo{
+    padding: 3px;
+    border: solid 1px;
+    width: 100px;
+    display: inline-block;
+}
+
+#welcome{
+    text-align: center;
+    border: solid 1px;
+    width: 300px;
+    display: inline-block;
+}
+
+header nav{
+    float: right;
+}
+body{
+    background-color: bisque;
+}

@@ -1,0 +1,80 @@
+
+
+form{
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+header {
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+header nav {
+     float: right;
+    }
+
+#logo{
+    
+    padding: 30px;
+    border: solid 1px;
+    margin: 5px;
+    width: 100px;
+    display: inline-block;
+}
+
+#welcomemsg{
+    border: solid 1px;
+    text-align: center;
+    display: inline-block;
+}
+
+footer{
+    border: solid 1px;
+    
+}
+html{
+    width: 989px;
+    margin: auto;
+}
+
+
+input [type = submit]{
+    border-radius: 20px;
+}
+
+.form1 form{
+    background-color: darkkhaki;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 500px;
+}
+
+/*.form2 form{
+    background-color: darkmagenta;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 500px;
+}*/
+
+.button{
+    border-radius: 20px;
+    background-color: darkslategray;
+    color:blue;
+}
+
+a:hover{
+    color:darkviolet;
+}
+
+h1:hover{
+    color: red;
+    margin-inline: 5px;
+}
+
+html{
+    border:double;
+}

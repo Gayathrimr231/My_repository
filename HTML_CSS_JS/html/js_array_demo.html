@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body></body>
+    <script>
+        var arr_num=[3,5,2,4,1];
+        console.log(arr_num);
+        console.log('Length of arr:' +arr_num.length);
+        
+        console.log('After reversing the array');
+        for(var i=0; i< arr_num.length; i++){
+            console.log(arr_num[i]);
+        }
+
+       //console.log(arr_num.reverse);
+        console.log(arr_num.sort());
+
+        console.log(arr_num.push(7));
+        console.log("After push:"+arr_num);
+        
+        console.log(arr_num.unshift(10));
+        console.log("After unshift:"+arr_num);
+        
+        console.log('Number deleted using pop() is:' +arr_num.pop());
+        console.log("After pop:"+arr_num);
+
+        console.log('Number deleted  using shift() is:' +arr_num.shift());
+        console.log("After shift:"+arr_num);
+
+        console.log('Number deleted  using splice:' +arr_num.splice(2,2));
+        console.log("After splice:"+arr_num);
+
+        
+        console.log('Number added  using splice:' +arr_num.splice(1,0,'30','40'));
+        console.log("After splice:"+arr_num);
+       
+        
+        var sum=0;
+
+        for(var i=0; i<arr_num.length; i++)
+        {
+            sum +=parseInt( arr_num[i]);
+        }
+        console.log('Sum of array elements: '+sum);
+
+    </script>
+</html>

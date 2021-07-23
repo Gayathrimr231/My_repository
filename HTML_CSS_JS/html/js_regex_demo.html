@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Expressions</title>
+    </head>
+    <body></body>
+    <script>
+        var s1 = /hello/i;
+        var s2 = "Hello1 , there . welcome to javascript . ";
+        console.log("check if 'hello' exits: "+s1.test(s2));
+
+        //to check
+        var s3 = /^hello/i;
+        console.log("check if the statement begins with 'hello':"+s3.test(s2));
+
+        var s4 = /hello$/i;
+        console.log("chek if the statement ends with 'hello':"+s4.test(s2));
+    </script>
+</html>

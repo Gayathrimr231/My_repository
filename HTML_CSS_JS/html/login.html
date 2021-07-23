@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <script type="text/javascript">
+        function validate(){
+        var user_name = document.getElementById('username');
+        console.log(user_name.value);
+
+        var password = document.getElementById('password');
+        console.log(password.value);
+        if((user_name.value == 'admin') && (password.value == 'admin')){
+            window.location.assign('success.html');
+        }else{
+            alert("Invalid user name or password");
+        }
+         return false;
+        }
+    
+        </script>
+</head>
+<body>
+    <form>
+    <label for="username">User name:</label>
+     <input type="text" id="username" name="username" required/>
+</br></br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required/>
+</br></br>
+    <input type="submit" value="login" onclick="return validate();"/>
+</form>
+</body>
+</html>

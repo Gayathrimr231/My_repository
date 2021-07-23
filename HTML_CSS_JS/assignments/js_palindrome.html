@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Palnum()
+            {
+                var rem, temp, final = 0;
+                var number = Number(document.getElementById("N").value);
+
+                temp = number;
+                while(number>0)
+                {
+                    rem = number%10;
+                    number = parseInt(number/10);
+                    final = final*10+rem;
+                }
+                if(final==temp)
+                {
+                    window.alert("number is Palindrome");
+
+                } else
+                {
+                    window.alert("number is  not Palindrome");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <h1>Check whether a number is Palindrome or not</h1>
+        Enter the number: <input type="text" name="n" id="N"/>
+        <button onclick="Palnum()">submit</button>
+    </body>
+</html>

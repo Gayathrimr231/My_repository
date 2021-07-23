@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>string</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        var s1="hello";
+        var s2="hello , there . welcome to javascript . hi , there .how is it going,";
+         var arr_s2 = s2.split(" ");
+
+         console.log(arr_s2);
+         console.log(arr_s2.lenght);
+         //this is to match 'hello' in s2
+         for(var i=0; i<arr_s2.length; i++){
+         if(s1.toLowerCase() == arr_s2[i].toLowerCase()){
+             console.log("Match found")
+         }
+         }
+
+         //this is to count 'there' in s2
+         for(var i=0; i<arr_s2.length; i++){
+         if(s1.toLowerCase() == arr_s2[i].toLowerCase()){
+             countThere++;
+
+         }
+        }
+        console.log("Occurances of 'there': " +countThere);
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Drop Down dynamically.</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="num1" name="num1"/>
+            <input type="submit" value="Add Value to Drop Down" onclick="return addValueToList();"/>
+
+        </form>
+        <select id='myDropDown'></select>
+    </body>
+    <script>
+        var selectDropDown = document.getElementById('myDropDown');
+        for(var i=1; i<=10; i++){
+            var optionsForDD = document.createElement('option');
+            optionsForDD.text=i;
+            optionsForDD.value=i;
+            selectDropDown.add(optionsForDD);
+
+        }
+
+        function addValueToList(){
+            var item = document.getElementById('num1').value;
+            var option = document.createElement('option');
+            option.text=item;
+            option.value=item;
+            var dropDown = document.getElementById('myDropDown');
+            dropDown.add(option);
+            return false;
+        
+        }
+    </script>
+</html>
