@@ -1,0 +1,13 @@
+a.update {
+    color: black;
+    background: #e8dedecc;
+}
+
+ a.view {
+    background: rgba(0,150,136,.1);
+    color: #009688;
+}
+ a.cancel {
+    background: rgba(233,30,99,.1);
+    color: #e91e63;
+}
