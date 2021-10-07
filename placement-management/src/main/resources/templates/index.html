@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Attendance</title>
+<style type="text/css">
+  .box1
+ {
+    font-size:30px;
+     color: black;
+ }
+ </style>
+</head>
+<body>
+<div align="center">
+    <h1>Student Attendance List</h1>
+    <div class="box1">
+    <a type="button" class="btn btn-success btn-block" href="/new">Create New Student</a>
+    </div>
+    <br/><br/>
+  <table class="table table-dark table-striped">
+        <thead>
+            <tr style="background-color:#6db6b9e6;">
+                <th>Student ID</th>
+                <th> Student Name</th>
+                <th>Course Name</th>
+                  <th>Total Days</th>
+                    <th>Number of days present</th>
+                      <th>Number of days absent</th>
+                        <th>Total percentage</th>
+                        <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="studentattendance : ${studentattendanceList}">
+            	<td th:text="${studentattendance.studId}">Student ID</td>
+               
+                	<td th:text="${studentattendance.studName}">Student Name</td>
+                		<td th:text="${studentattendance.courseName}">Course Name</td>
+                			<td th:text="${studentattendance.totalDays}">Total Days</td>
+                				<td th:text="${studentattendance.noOfDaysPresent}">NO_Of_Days_Present</td>
+                					<td th:text="${studentattendance.noOfDaysAbsent}">NO_Of_Days_Absent</td>
+                					<td th:text="${studentattendance.totalPerc}">Total Perc</td>
+                <td>
+               
+                	<a th:href="@{/edit/{id}(id=${studentattendance.studId})}"  class="btn btn-info" role="button">Edit</a>
+                	&nbsp;&nbsp;&nbsp;
+                	<a th:href="@{/delete/{id}(id=${studentattendance.studId})}" class="btn btn-danger" role="button">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>    
+</body>
+</html>

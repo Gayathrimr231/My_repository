@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>Edit Attendance</title>
+ <style type="text/css">
+  .box
+ {
+     height: 450px;
+     width: 350px;
+     background-color:#0a0807;
+     margin: 70px auto;
+     opacity: .6;
+     color: white;
+ }
+ </style>
+</head>
+<body>
+	<div align="center">
+		<h1>Edit Attendance</h1>
+		<br />
+		<form action="#" th:action="@{/save}" th:object="${studentattendance}"
+			method="post">
+              <div class="box">
+			<table border="0" cellpadding="10">
+			
+				<tr>				
+					<td>Student ID:</td>
+					<td>
+						<input type="text" th:field="*{studId}" readonly="readonly" />
+					</td>
+				</tr>			
+				<tr>				
+					<td>Student Name:</td>
+					<td>
+						<input type="text" th:field="*{studName}" />
+					</td>
+				</tr>
+				<tr>				
+					<td>Course Name:</td>
+					<td>
+						<input type="text" th:field="*{courseName}" />
+					</td>
+				</tr>
+				<tr>				
+					<td>Total Days:</td>
+					<td>
+						<input type="text" th:field="*{totalDays}" />
+					</td>
+				</tr>
+				<tr>				
+					<td>Number of days present:</td>
+					<td>
+						<input type="text" th:field="*{noOfDaysPresent}" />
+					</td>
+				</tr>
+				<tr>				
+					<td>Number of days absent:</td>
+					<td>
+						<input type="text" th:field="*{noOfDaysAbsent}" />
+					</td>
+				</tr>
+				<tr>				
+					<td>Total percentage:</td>
+					<td>
+						<input type="text" th:field="*{totalPerc}" />
+					</td>
+				</tr>
+				
+					<td colspan="2"><button type="submit" class="btn btn-primary">Save</button> </td>
+				</tr>
+			</table>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
