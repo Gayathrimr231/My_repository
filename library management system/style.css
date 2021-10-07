@@ -1,0 +1,120 @@
+.wrapper
+ {
+     height:660px;
+     width: 1350px;
+     /*background-color: red;*/
+ }
+ header
+ {
+    height: 100px;
+    width: 1320px;
+    background-color: black;
+ }
+ section
+ {
+    height: 664px;
+    width: 1320px;
+    background-color: grey; 
+ }
+ 
+ .logo
+ {
+     height: 100px;
+    
+     float: left;
+    padding-left: 20px;
+
+ }
+ .logo img
+ {
+     padding-left: 50px;
+ }
+ li a {
+      color: white;
+      text-decoration: none;
+ }
+ /*nav
+ {
+     float: right;
+     word-spacing: 30px;
+     padding: 20px;
+ }
+ nav li {
+
+    display: inline-block;
+    line-height: 50px;
+ }*/
+ section .sec_img
+ {
+     height: 664px;
+     margin-top: 0px;
+     background-image: url("images/2.jpg");
+ }
+ .box
+ {
+     height: 250px;
+     width: 350px;
+     background-color:#0a0807;
+     margin: 70px auto;
+     opacity: .6;
+     color: white;
+ }
+ /*----------student_login-------*/
+
+ .log_img
+ {
+    height: 664px;
+    margin-top: 0px;
+    background-image: url("images/3.jpg");
+ }
+ .box1
+ {
+     height: 450px;
+     width: 500px;
+     background-color:black;
+     margin: 70px auto;
+     opacity:.5;
+     color: white;
+     padding: 20px;
+ }
+ form .login
+ {
+     margin:auto 70px;
+ }
+ input{
+     height: 25px;
+     width: 300px;
+
+ }
+ /*------------------------reg_page-----------------*/
+
+ .reg_img
+ {
+    height: 630px;
+    margin-top: 0px;
+    background-image: url("images/11.jpg");
+ }
+ .box2
+ {
+     height: 600px;
+     width: 400px;
+     background-color:black;
+     margin: 0px auto;
+     opacity:.5;
+     color: white;
+     padding: 20px;
+ }
+ form .Registrarion
+ {
+     margin: auto 50px;
+ }
+ .box3
+ {
+    height: 450px;
+    width: 400px;
+    background-color:black;
+    margin: 0px auto;
+    opacity:.5;
+    color: white;
+    padding: 20px;
+ }

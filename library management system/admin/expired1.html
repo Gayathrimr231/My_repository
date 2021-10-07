@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>expired</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    section{
+             margin-top: -20px;
+         }
+    .srch
+    {
+      padding-left: 70%;
+    }   
+    .form-control
+    {
+       width: 300px;
+       height: 30px;
+       background-color: black;
+       color: white;
+    }  
+
+    body {
+        
+        background-repeat: no-repeat;
+        font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  margin-top:50px ;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+   
+
+   
+
+
+.sidenav {
+  height: 100%;
+  margin-top:50px ;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.container
+{
+    height: 700px;
+   /* width: 85%;*/
+    background-color: black;
+    opacity: .7;
+    color: white;
+    margin-top: -65px;
+}
+.scroll
+{
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+}
+th,td
+{
+  width: 10%;
+}
+     </style>
+</head>
+<body>  
+    
+
+         <nav class="navbar navbar-inverse">
+             <div class="container-fluid">
+        <div class="navbar-header">
+        
+            <a class="navbar-brand active">ONLINE LIBRARY MANAGEMENT SYSTEM</a>
+        </div>   
+      
+          <ul class="nav navbar-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="">BOOKS</a></li>
+              <li><a href="">FEEDBACK</a></li>
+              
+
+              
+              
+           </ul>   
+           <ul class="nav navbar-nav">
+               <li><a href="profile.html">PROFILE</a></li>
+               <li><a href=" ">STUDENT-INFORMATION</a></li>
+               
+           </ul>
+           
+            <script>
+              // Set the date we're counting down to
+              var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+              
+              // Update the count down every 1 second
+              var x = setInterval(function() {
+              
+                // Get today's date and time
+                var now = new Date().getTime();
+                  
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                  
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                  
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+                  
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+              </script>
+
+       <ul class="nav navbar-nav navbar-right">
+              <li><a><p style="color: #ff1503; font-size: 20px;" id="demo"></p></a></li>
+              <li><a href="student_login.html"><span class="glyphicon glyphicon-log-in"> LOGOUT</span></a></li>
+              
+              </ul>
+       </div>
+   </nav><br><br><br>
+
+
+   
+
+    <div class="container">
+      
+  <div style="float:right;padding-top:20px;">
+    <h3>
+      Your fine is:3rs
+    </h3>
+
+  </div>
+  
+        <div class="srch">
+            
+            </div>
+      <h2 style="text-align: center;">Date expired list
+
+      </h2><br>
+      
+      <table class="table table-bordered" >
+        <thead>
+          <tr style="background-color: #6db6b9e6;">
+            <th>Username</th>
+            <th>Roll No</th>
+            <th>BID</th>
+            <th>Book Name</th>
+            <th>Authors Name</th>
+            <th>Edition</th>
+            <th>Status</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+          </tr>
+        </thead>
+        <tbody>
+        </table>
+        <div class="scroll">
+            <table class="table table-bordered" style="width: 100%;">
+         
+          
+          <tr>
+            <td>Lahari</td>
+            <td>1</td>
+            <td>1</td> 
+            <td>Data Structure</td>
+            <td>V.K.Mehta,Rohit Mehta</td>
+            <td>3rd</td>
+            <td style="color: red;">EXPIRED</td>
+            <td>2019-01-30</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+  </body>
+  </html>
+  

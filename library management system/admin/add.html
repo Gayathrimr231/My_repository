@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    section{
+             margin-top: -20px;
+         }
+    .srch
+    {
+      padding-left: 850px;
+    }     
+
+    body {
+        background-color: #024629;
+        font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  margin-top:50px ;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.h:hover
+{
+  color: white;
+  width: 300px;
+  height: 50px;
+  background-color:  #00544c;;
+}
+.book
+{
+    width: 400px;
+    margin: 0px auto;
+}
+.form-control
+{
+    background-color: #080707;
+    color: white;
+
+}
+     </style>
+</head>
+<body>  
+    
+
+         <nav class="navbar navbar-inverse">
+             <div class="container-fluid">
+        <div class="navbar-header">
+        
+            <a class="navbar-brand active">ONLINE LIBRARY MANAGEMENT SYSTEM</a>
+        </div>   
+      
+          <ul class="nav navbar-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="../admin/books.html">BOOKS</a></li>
+              
+              
+           </ul>   
+           <ul class="nav navbar-nav">
+               <li><a href="../admin/profile.html">PROFILE</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+          
+              <li><a href="student_login.html"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              </ul>
+       </div>
+   </nav>
+
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div style="color: white; margin-left: 30px;">
+      
+      <img src="../admin/images/p.jpg" height="100px" width="120px">
+   
+    </div>
+    <div class="h"><a href="add.html">Add Books</a></div>
+    <div class="h"> <a href="../admin/delete.html">Delete Books</a></div>
+    <div class="h"> <a href="../admin/request.html">Book Request</a></div>
+    <div class="h"><a href="../admin/issue_info.html">Issue Information</a></div>
+    
+  </div>
+  <div id="main">
+      <span style="font-size:30px;cursor:pointer; color: black;"onclick="openNav()">&#9776; open</span>
+  </div class="container">
+  <h2 style="color: black; font-family: Lucida Console; text-align: center;"><b>Add New Books</b></h2>
+  <form class="book" action="" method="POST" style="text-align: center;">
+    <input type="text" name="bid" class="form-control" placeholder="Book Id" required=""><br>
+      <input type="text" name="name" class="form-control" placeholder="Book Name" required=""><br>
+      <input type="text" name="authors" class="form-control" placeholder="Authors Name" required=""><br>
+      <input type="text" name="edition" class="form-control" placeholder="Edition" required=""><br>
+      <input type="text" name="status" class="form-control" placeholder="Status" required=""><br>
+      <input type="text" name="quantity" class="form-control" placeholder="Quantity" required=""><br>
+      <input type="text" name="department" class="form-control" placeholder="Department" required=""><br>
+      <a style="color: black;" href="added_books.html" class="btn btn-default">Add</a>
+
+  </form>
+  </div>
+  <div>
+    <button>Back</button>
+  </div>
+  <script>
+    let btnBack=document.querySelector('button');
+    btnBck.addEventListener('click',()=>{
+      window.history,back();
+    });
+  </script>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#024629";
+  }
+  </script>
+ </body>
+ </html>
+   
+        
