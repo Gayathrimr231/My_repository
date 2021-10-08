@@ -1,7 +1,6 @@
 package com.edubridge.springboot.placementmanagement.entities;
 
 import java.util.Objects;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,37 +13,35 @@ import javax.persistence.Table;
 public class Studentattendance {
 	
 	@Id
-	
 	@Column(name="stud_id")
-	
- private int studId;
+	private int studId;
 	
 	@Column(name="stud_name")
- private String studName;
+    private String studName;
 	
 	@Column(name="course_name")
- private String courseName;
+    private String courseName;
 	
 	@Column(name="total_days")
- private int totalDays;
+    private int totalDays;
 	
 	@Column(name="no_of_days_present")
- private int noOfDaysPresent;
+    private int noOfDaysPresent;
 	
 	
 	@Column(name="no_of_days_absent")
- private int noOfDaysAbsent;
+    private int noOfDaysAbsent;
 	
 	@Column(name="total_perc")
- private int totalPerc;
+    private int totalPerc;
  
  public Studentattendance () {}
 
-public int getStudId() {
+    public int getStudId() {
 	return studId;
 }
 
-public void setStudId(int studId) {
+    public void setStudId(int studId) {
 	this.studId = studId;
 }
 

@@ -47,6 +47,11 @@ public class StudentattendanceServiceImp implements StudentattendanceService{
 		public Studentattendance updateStudentattendance(int studId, Studentattendance studentattendance) {
 			Studentattendance s1=getStudentattendanceById(studId);
 			s1.setStudName(studentattendance.getStudName());
+			s1.setCourseName(studentattendance.getCourseName());
+			s1.setTotalDays(studentattendance.getTotalDays());
+			s1.setNoOfDaysPresent(studentattendance.getNoOfDaysPresent());
+			s1.setNoOfDaysAbsent(studentattendance.getNoOfDaysAbsent());
+			s1.setTotalPerc(studentattendance.getTotalPerc());
 			return studentattendanceRepo.save(s1);			
 		}
 		

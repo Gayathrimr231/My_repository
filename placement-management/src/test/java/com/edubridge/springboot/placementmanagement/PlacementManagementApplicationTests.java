@@ -1,13 +1,10 @@
 package com.edubridge.springboot.placementmanagement;
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import com.edubridge.springboot.placementmanagement.entities.Studentattendance;
 import com.edubridge.springboot.placementmanagement.repository.StudentattendanceRepository;
 
@@ -25,13 +22,13 @@ class PlacementManagementApplicationTests {
 		@Test
 		public void testCreate() {
 			Studentattendance studentattendance = new Studentattendance();
-			studentattendance.setStudId(15);
-			studentattendance.setStudName("lahari");
-			studentattendance.setCourseName("java");
+			studentattendance.setStudId(16);
+			studentattendance.setStudName("swarna");
+			studentattendance.setCourseName("python");
 			studentattendance.setTotalDays(100);
-			studentattendance.setNoOfDaysPresent(100);
-			studentattendance.setNoOfDaysAbsent(0);
-			studentattendance.setTotalPerc(100);
+			studentattendance.setNoOfDaysPresent(99);
+			studentattendance.setNoOfDaysAbsent(1);
+			studentattendance.setTotalPerc(99);
 			studentattendancerepo.save(studentattendance);
 
 		}

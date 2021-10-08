@@ -1,7 +1,7 @@
 package com.edubridge.springboot.placementmanagement.exception;
 
 public class ErrorResponse {
-	  private String message;
+	    private String message;
 	    private int status;
 	    
 	    public ErrorResponse() {}
